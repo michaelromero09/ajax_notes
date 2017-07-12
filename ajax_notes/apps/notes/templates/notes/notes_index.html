@@ -1,0 +1,17 @@
+<div class='notes'>
+  {% for note in notes %}
+  <div class='note'>
+    <h3>{{ note.title }}</h3>
+    <h4>Note ID: {{ note.id }}</h4>
+    <p class='edit'>{{ note.description }}</p>
+    <!-- <form action="/edit" method='post'>
+      <textarea name="description" rows="5">{{ note.description }}</textarea>
+    </form> -->
+    <form class='delete-form' action="/delete" method="post">
+      {% csrf_token %}
+      <input type="hidden" name='note_id' value='{{ note.id }}'>
+      <input class='submit' type="submit" value='Delete'>
+    </form>
+  </div>
+  {% endfor %}
+</div>

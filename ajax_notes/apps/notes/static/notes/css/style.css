@@ -1,0 +1,29 @@
+* {
+  margin: 10px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.note {
+  width: 14rem;
+  border: 1px solid lightslategray;
+}
+
+p {
+  height: 100px;
+  width: 11rem;
+  overflow: scroll;
+}
+
+input {
+  display: block;
+}
+
+.submit {
+  height: 30px; 
+  width: 110px;
+  color: white;
+  background-color: blue;
+  border-radius: 5px;
+}
